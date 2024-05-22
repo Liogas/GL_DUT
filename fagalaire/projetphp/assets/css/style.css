@@ -1,0 +1,618 @@
+*{margin : 0;padding: 0;}
+
+body { 
+	background-color : white;
+	padding-bottom: 2%;
+}
+
+i{
+	color:black;
+	padding: 1%;
+	padding-top : 5%;
+}
+
+/* GESTION DU FORMULAIRE */
+
+form{
+	padding-top: 7%; 
+	width: 75%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+fieldset{
+	border : solid 3px;
+	box-shadow: 2px 2px 5px black;
+	padding: 2%;
+	background-color: lightblue;
+}
+
+legend{
+	color: white;
+	font-size : 25px;
+	padding: 1.5%;
+	background-color: black;
+	border:solid 3px;
+	border-color :black;
+	border-radius: 5px;
+}
+
+
+.reponse{
+	margin-top : 1.5%;
+	padding-bottom: 5%;
+	border-bottom : solid 3px;
+}
+
+.question{
+	font-size: 25px;
+	margin-bottom: 4%;
+	padding-bottom: 1%;
+	border-bottom: solid .5px;
+	width: 100%;
+}
+
+.checkbox label{
+	margin-left: 1%;
+}
+
+.textArea textarea{
+	border:solid 1px black ;
+	border-radius: 10px;
+	width: 50%;
+	padding: 1%;
+	font-size: 14px;
+}
+
+.textField input{
+	border:solid 1px black ;
+	border-radius: 10px;
+	width: 50%;
+	padding: 1%;
+}
+
+.date input{
+	padding: 1%;
+	border:solid 1px black ;
+	border-radius: 10px;
+}
+
+.select select{
+	border:solid 1px black ;
+	border-radius: 5px;
+	padding: 1%;
+}
+
+
+.boutonFinal{
+	padding-top: 2%;
+	display: flex;
+	justify-content: center;
+}
+
+.boutonFinal input{
+	padding: 1%;
+	width: 10%;
+	margin: .5%;
+	border:solid 1px black ;
+	border-radius: 5px;
+}
+
+.boutonFinal input:hover{
+	background-color: black;
+	color:white;
+	border-radius: 5px;
+}
+
+/* ****************************************************************** */
+
+
+header {
+	display: flex;	
+	background-color: lightblue;
+	border-bottom: solid 3px;
+	position: fixed;
+	width: 100%;
+}
+
+header h1{
+	width: 20%;
+	font-size: 30px;
+	color: black;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+}
+
+header .rechForm{
+	padding: 0;
+	margin:0;
+	width: 75%;
+}
+
+header .rechForm input{
+	text-align: center;
+	padding: 1.5%;
+	width: 100%;
+	border-top : none;
+	border-bottom : none;
+	border-left : solid 2px;
+	border-right : solid 2px;
+}
+
+/* GESTION DIFFERENTE PAGE ACCUEIL */
+
+.visite .corpsAccueil{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.visite .corpsAccueil .formConnect{
+	width: 100%;
+}
+
+.visite .textAccueil{
+	padding-top: 8%;
+	font-size: 20px;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.visite .textRejoindre{
+	padding-top : 6%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.visite .textRejoindre p{
+	padding-left: 16%;
+	padding-right: 16%;
+	font-size : 25px;
+	color: cadetblue;
+}
+
+.visite .textRejoindre i{
+	color: cadetblue;
+}
+
+.visite .textAccueil p{
+	box-shadow: 10px 10px 0px black ;
+}
+
+.log .titre{
+	padding-top: 15%;
+	background: none;
+	font-family: 'Permanent Marker', cursive;
+	font-size : 30px;
+}
+
+.log section{
+	padding-top:3%;
+	padding-bottom: 3%;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightblue;
+	border-bottom: solid 3px;
+}
+
+.log section nav{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.log section nav li {
+	list-style: none;
+	margin-left: 3%;
+	padding: 2.5%;
+	border:solid black 2px;
+	background: white;
+	box-shadow: 2px 2px 1px black;
+}
+
+.log section nav li:nth-child(1) {
+	margin: 0;
+}
+
+.log section nav li a{
+	color:black;
+}
+
+.log section nav li a:hover i{
+	color:blue;
+}
+
+.log section nav li a#deco:hover i{
+	color: red;
+}
+
+
+.erreurInscription{
+	color: red;
+	padding: 1%;
+	margin-top: -2%;
+	margin-left: 10%;
+	width: 30%;
+}
+
+.erreurConnexion{
+	color: red;
+	padding: 1%;
+	margin-top: -2%;
+	margin-left: 60%;
+	width: 30%;
+}
+
+/***************************************/
+
+
+/* FORMULAIRE INSCRIPTION ET CONNECTION */
+
+.formConnect section{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 8%;
+}
+
+.formConnect section form{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.formConnect section form fieldset{
+		border:none;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-shadow: 0px 0px 50px rgb(102, 155, 255);
+}
+
+.formConnect section form fieldset legend{
+	background-color: black;
+	color:white;
+	font-size : 17px;
+	padding: 2.5%;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+
+.formConnect section form input{
+	padding: 2%;
+	margin: 1%;
+	width: 80%;
+}
+
+.formConnect section form input:focus{
+	background-color: lightgrey;
+	border-radius: 5px;
+}
+
+.formConnect section form input::placeholder{
+	color: black;
+	font-size: 14px; 
+}
+
+.formConnect section form .submit{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.formConnect section form input#valider,
+.formConnect section form input#reset{
+	width: 30%;
+	padding: 0;
+  }
+
+.formConnect section form input#valider:hover,
+.formConnect section form input#reset:hover{
+	background-color: lightblue;
+	border-radius: 7px;
+}
+
+/****************************************************/
+
+
+/* ESPACE CLIENT */
+
+.espaceClient{
+	border: solid 3px black;
+	border-radius: 5px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2%;
+	padding: 2%;
+	background-color: lightblue;
+}
+
+.espaceClient .haut{
+	padding: 3%;
+	font-size: 24px;
+	letter-spacing: 2px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.noForm{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	margin-top: 5%;
+	background-color: white;
+	border:solid 2px black;
+	box-shadow: 2px 2px 0px black;
+}
+
+.noForm i{
+	padding:3%;
+}
+
+.textNoForm{
+	text-align: center;
+}
+
+.textNoForm a{
+	color: black;
+	text-decoration: none;
+	font-size : 14px;
+}
+
+.textNoForm .lienCreer{
+	padding-top : 2%;
+}
+
+.textNoForm a:hover{
+	text-decoration: underline;
+}
+
+.blockForm{
+	margin-left: 3%;
+	width: 95%;
+	border: solid 2px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	margin-top: 2%;
+	background-color: white;
+}
+
+.blockForm .block1{
+	width: 97%;
+	display: flex;
+	align-items: center;
+}
+
+.blockForm h4{
+	margin-left: 2%;
+	font-size: 18px;
+	width: 32%;
+}
+
+.blockForm .etatA{
+	margin-left: 7%;
+	color: green;
+	font-size: 14px;
+	width: 20%;
+}
+
+.blockForm .etatD{
+	color: red;
+	margin-left: 7%;
+	font-size: 14px;
+	width: 20%;
+}
+
+.blockForm .description{
+	width: 35%;
+	font-size: 15px;
+}
+
+.blockForm ul{
+	border-left: solid 2px;;
+	padding: 1%;
+	background-color: rgb(221, 221, 221);
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.blockForm ul li{
+	list-style: none;
+	padding: .3em;
+}
+
+.blockForm ul li i#result:hover{
+	color: blue;
+}
+
+.blockForm ul li i#activer:hover{
+	color: green;
+}
+
+.blockForm ul li i#desactiver:hover{
+	color : red;
+}
+
+.blockForm ul li i#supprimer:hover{
+	color: brown;
+}
+
+#boutonClé{
+	margin-left: -1%;
+	box-shadow: 2px 2px 2px black;
+}
+
+#boutonClé:hover{
+	box-shadow: 2px 2px 20px blue;
+}
+
+.clé{
+	font-size: 0;
+}
+
+.recherche{
+	margin-top: 10%;
+	text-align: center;
+}
+
+.recherche input{
+	border:solid 1px black ;
+	border-radius: 10px;
+	width: 50%;
+	padding: 2%;
+	text-align: center;
+}
+
+.dateForm{
+	background-color: rgb(13, 89, 102);
+	color:white;
+	padding:0.5%;
+	width: 19%;
+	margin-left: 70%;
+	font-size: 14px;
+	border-left: solid 2px;
+	border-right: solid 2px;
+	border-bottom: solid 2px;
+	border-color:black;
+}
+
+/***********************************/
+
+/* RESULTAT DES FORMULAIRES */
+
+.resultForm{
+	background-color: lightblue;
+	margin-top : 2%;
+	width: 80%;
+	margin-right:auto;
+	margin-left:auto;
+	border:solid 2px;
+	border-radius: 10px;
+}
+
+.haut{
+	font-size : 25px;
+	padding : 3%;
+	border-bottom: solid 2px black;
+	border-width: 5%;
+	background-color: black;
+	color:white;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.corps{
+	padding: 2%;
+	background-color: lightblue;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.questions{
+	font-size : 21px;
+	margin-top : 2%;
+	padding-bottom: 2%;
+	border-bottom: solid 1px;
+}
+
+.result{
+	font-size: 18px;
+	padding-top: 2%;
+	padding-bottom : 1%;
+}
+
+/***********************************/
+
+
+/* CREATION FORMULAIRE */
+
+fieldset #titre input{
+	margin-left: 1%;
+	padding: 0.5%;
+	width: 85%;
+}
+
+.question_titre{
+	margin-top : 3%;
+}
+
+.question_titre .inputQuestion{
+	margin-top: 1%;
+	padding : 0.5%;
+}
+
+.select_qtype{
+	margin-top:0.5%;
+}
+
+.add_form_question,
+.delete_form_question{
+	padding: 0.6%;
+	border: solid 1px;
+	border-radius: 5px;
+}
+
+.add_form_question:hover,
+.delete_form_question:hover{
+	background-color: black;
+	color:white;
+	border-color: black;
+	border-radius: 5px;
+}
+
+.add_question_choice,
+.delete_question_choice{
+	padding: 0.25%;
+	padding-left : 0.75%;
+	padding-right : 0.75%;
+	border: solid 1px;
+	border-radius: 5px;	
+}
+
+.add_question_choice:hover,
+.delete_question_choice:hover{
+	background-color: black;
+	color:white;
+	border-color: black;
+	border-radius: 5px;
+}
+
+.question_choice{
+	margin-top : 0.5%;
+}
+
+.question_help{
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+/**************************/ 
+
+details #help{
+	margin-top : 0.5%;
+	padding : 1%;
+	font-size : 15px;
+	background-color: white;
+	border: solid 0.5px;
+}
+
+
+.formDescription p{
+	padding: 2%;
+	font-size: 18px;
+	background-color: rgb(60, 115, 117);
+	color : whitesmoke;
+	border: solid 1px black;
+}

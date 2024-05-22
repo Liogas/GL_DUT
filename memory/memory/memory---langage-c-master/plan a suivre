@@ -1,0 +1,43 @@
+
+Consigne : Créer un memory
+
+
+    - Les cartes seront retournées par un click de souris.
+    - Le jeu affichera le temps (en secondes) écoulé depuis le début de la partie.
+    - On devra pouvoir jouer sur des grilles de tailles différentes.
+    - Le temps de mémorisation d'une paire de cartes découvertes devra durer une seconde.
+    - Un mode tricheur est accessible en pressant la touche t qui découvre la grille et interrompt le temps jusqu'à ce qu'on rappuie sur cette  même touche pour reprendre la partie.
+
+
+Plan : 
+
+1/ créer les deux tableaux (Carte de dos, Carte de face)
+2/ Mettre en place le troisième tableau (Tableau apres clique)
+3/ Gérer le sytème de clique
+4/ Gérer le mode triche
+5/ Créer le timer
+6/ Faire en sorte que les cartes reste 1 secondes
+7/ Création du menu
+8/ Amélioration + nettoyage de code
+
+
+
+
+Idée de fichier a créer : 
+
+main.c  --> appel de fonction 
+
+menu.c --> gestion du menu (Paramètre, Jouer)
+menu.h
+
+jeu.c --> toute les fonctions concernant le déroulement d'une partie (mode triche, affichage des cartes etc)
+jeu.h
+
+chrono.c --> Gestion du chronomètre (qui sera utile pour l'affichage de 1sec des cartes)
+chrono.h
+
+
+
+Menu : 
+
+Difficulté : 4x4, 7x4, 6x6, 8x8, 8x6
